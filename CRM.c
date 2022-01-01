@@ -63,7 +63,6 @@ void readfile(char name[50])
     fclose(fp);
 }
 
-
 void main()
 {
     while (a > 0)
@@ -100,8 +99,8 @@ void main()
             scanf("%f", &bill);
             printf("Enter Amount Payed by the Customer: Rs. ");
             scanf("%f", &payment);
-            customer.balance=customer.balance-bill+payment;
-            printf("\nUpdated Customer Balance: Rs. %.2f",customer.balance);
+            customer.balance = customer.balance - bill + payment;
+            printf("\nUpdated Customer Balance: Rs. %.2f", customer.balance);
             writefile();
             continue;
         }
@@ -113,9 +112,9 @@ void main()
             readfile(s_name);
             printf("Enter Amount to be added: Rs. ");
             scanf("%f", &payment);
-            customer.balance+=payment;
-            printf("\nRs. %.2f Added Successfully",payment);
-            printf("\nUpdated Customer Balance: Rs. %.2f",customer.balance);
+            customer.balance += payment;
+            printf("\nRs. %.2f Added Successfully", payment);
+            printf("\nUpdated Customer Balance: Rs. %.2f", customer.balance);
             writefile();
             continue;
         }
